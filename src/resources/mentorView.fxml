@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MentorController">
+   <children>
+      <HBox prefHeight="52.0" prefWidth="725.0" style="-fx-background-color: yellow;">
+         <children>
+            <Button fx:id="btnAdd" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Add" textAlignment="CENTER">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="480.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnEdit" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Edit" textAlignment="CENTER">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnDelete" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Delete" textAlignment="CENTER">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <TableView fx:id="tableView" prefHeight="430.0" prefWidth="725.0">
+         <columns>
+            <TableColumn fx:id="colName" prefWidth="107.0" text="Name">
+               <cellValueFactory>
+                  <PropertyValueFactory property="name" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="colAge" prefWidth="44.0" text="Age">
+               <cellValueFactory>
+                  <PropertyValueFactory property="age" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="colAddress" prefWidth="87.0" text="Address">
+               <cellValueFactory>
+                  <PropertyValueFactory property="address" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="colOccupation" prefWidth="99.0" text="Occupation">
+               <cellValueFactory>
+                  <PropertyValueFactory property="occupation" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="colFatherName" prefWidth="115.0" text="Father's name">
+               <cellValueFactory>
+                  <PropertyValueFactory property="fatherName" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="colNRCNo" prefWidth="102.0" text="NRC No">
+               <cellValueFactory>
+                  <PropertyValueFactory property="nrcNO" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="colClass" prefWidth="170.0" text="Class">
+               <cellValueFactory>
+                  <PropertyValueFactory property="classroom" />
+               </cellValueFactory>
+            </TableColumn>
+         </columns>
+      </TableView>
+   </children>
+</VBox>

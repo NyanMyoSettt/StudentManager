@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomeViewController">
+   <children>
+      <HBox prefHeight="70.0" prefWidth="700.0">
+         <children>
+            <Button fx:id="btnStudent" mnemonicParsing="false" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #f7f728;" text="Students">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="20.0" right="15.0" top="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnMentor" mnemonicParsing="false" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #f7f728;" text="Mentors">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnClassroom" mnemonicParsing="false" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #f7f728;" text="Classes">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <StackPane fx:id="stackPane" prefHeight="430.0" prefWidth="725.0" />
+   </children>
+</VBox>
